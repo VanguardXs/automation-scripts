@@ -17,3 +17,17 @@ Converts a CSV file into an Excel (.xlsx) file.
 **Usage**
 ```bash
 python data_utils/csv_to_excel.py input.csv
+
+
+Note:
+Although some scraping scripts already produce well-structured CSV files,
+the `clean_csv.py` utility is designed as a universal post-processing tool.
+
+It is useful when:
+- working with multiple data sources
+- handling messy or user-generated content
+- removing duplicates after merging datasets
+- normalizing text before analysis or storage
+
+In simple scraping cases (like books.toscrape.com), cleaning may not be required,
+but the tool becomes essential in real-world data pipelines.
